@@ -1,0 +1,412 @@
+/*  ESTILOS GENERALES   */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: auto;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+}
+
+/*  ESTILOS CABECERA    */
+.cabecera-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+    width: 100%;
+    background-color: #f0dc1c;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-around;
+    padding-right: 7%;
+}
+
+.menu-navegacion {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    list-style-type: none;
+}
+
+/*  ESTILOS LOGO   */
+.logo-footer {
+    width: 4rem;
+    height: 4.2rem;
+    margin-top: 10%;
+}
+
+.logo {
+    width: 4rem;
+    height: 4rem;
+    margin-left: 7%;
+}
+
+/*  ESTILOS ENLACES */
+.item-menu, .texto-footer {
+    transition: 0.5s font-size ease;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+.item-menu:hover, .texto-footer:hover {
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/*  SECCION BANNER  */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 350px;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.imagen-banner {
+    width: 100%;
+    height: 100%;
+}
+
+
+.titulo-banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+
+}
+main h2 {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+#community {
+    display: flex;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+article {
+    background-color: #1C5D8C;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+h3 {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+p {
+    font-size: 0.9em;
+}
+
+#puntos {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#puntos div {
+    width: 10px;
+    height: 10px;
+    background-color: #999;
+    border-radius: 50%;
+    margin: 0 5px 40px 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+#puntos div:first-child {
+    background-color: black;
+}
+
+#puntos div:nth-child(2) {
+    background-color: #80A4BE;
+}
+
+#puntos div:last-child {
+    background-color: #80A4BE;
+}
+
+#mel {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    background-color: #1C5D8C;
+    color: white;
+    height: 210px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+
+#mel h2 {
+    margin-left: 0;
+    margin-top: 20px;
+}
+
+#mel img {
+    position: absolute;
+    margin-top: -15px;
+    margin-left: -5px;
+    width: 20%;
+    height: auto;
+}
+
+#mel div {
+    margin-left: 27%;
+    margin-right: 2%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+}
+
+/* Contenedor principal */
+#medio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+#medio a {
+    display: inline-block;
+    background-color: #175a92;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+
+#botons {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#botons article {
+    width: 100%;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Month header */
+.month {
+  border-radius: 20px 20px 0 0;
+  padding: 30px 0px 30px 0px;
+  width: 100%;
+  color: black;
+  background: white;
+  text-align: center;
+  border: 0.5px solid black;
+
+}
+
+/* Month list */
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: black;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+  float: left;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+/* Next button */
+.month .next {
+  float: right;
+  padding-top: 10px;
+  padding-right: 20px;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 10px 0;
+    background-color:white;
+    border: 1px solid black;
+}
+
+.weekdays li {
+  width: 13.6%;
+  color: black;
+  text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+    
+  border-radius: 0 0 20px 20px;
+  padding: 10px 0;
+  margin: 0;
+  border: 0.5px solid black;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.45%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: black;
+}
+
+/* Highlight the "current" day */
+.days li .active {
+  padding: 5px;
+  background: #1C5D8C;
+  color: white !important
+}
+
+
+#about {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    background-color: #1C5D8C;
+    color: white;
+    height: 210px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    border-radius: 20px;
+    margin-top: 70px;
+}
+
+#about img {
+    position: absolute;
+    margin-top: -15px;
+    margin-right: -5px;
+    width: 20%;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+#about div {
+    margin-right: 27%;
+    margin-left: 2%;
+}
+
+#about>div>h2 {
+    margin-top: 40px;
+    margin-left: 0px;
+}
+
+main>h2 {
+    margin-top: 80px;
+    font-size: 20px;
+}
+
+#cn{
+    display: flex;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 90px;
+}
+#cn article{
+    background-color: #1C5D8C;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+#cn h2{
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 0;
+    margin-right: 0;
+}
+#cn a{
+    color: white;
+    font-weight: bold;
+}
+
+/*  ESTILOS PIE DE PÁGINA   */
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    background-color: #f0dc1c;
+}
+
+.seccion-footer {
+    text-align: center;
+}
+
+@media screen and (min-width: 2200px) {
+    .footer {
+        position: fixed;
+        bottom: 0;
+    }
+}
