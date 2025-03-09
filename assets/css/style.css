@@ -40,12 +40,21 @@ body {
     width: 4rem;
     height: 4.2rem;
     margin-top: 10%;
+    transition: width 0.5s ease, height 0.5s ease;
+    cursor: pointer;
+}
+
+.logo:hover, .logo-footer:hover {
+    width: 4.2rem;
+    height: 4.5rem;
 }
 
 .logo {
     width: 4rem;
     height: 4rem;
     margin-left: 7%;
+    transition: width 0.5s ease, height 0.5s ease;
+    cursor: pointer;
 }
 
 /*  ESTILOS ENLACES */
@@ -58,7 +67,7 @@ a {
     text-decoration: none;
 }
 
-.item-menu:hover, .texto-footer:hover {
+.item-menu:hover {
     font-size: 1.2rem;
     cursor: pointer;
 }
@@ -81,7 +90,7 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #00000080;
     z-index: 1;
 }
 
@@ -392,7 +401,7 @@ main>h2 {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 150px;
+    height: 175px;
     background-color: #f0dc1c;
 }
 
@@ -400,7 +409,17 @@ main>h2 {
     text-align: center;
 }
 
-@media screen and (min-width: 2200px) {
+.texto-footer, .texto-copyright {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    transition: 0.5s font-size ease;
+}
+
+.texto-footer:hover {
+    font-size: 1.3rem;
+}
+
+@media screen and (min-height: 2500px) {
     .footer {
         position: fixed;
         bottom: 0;
