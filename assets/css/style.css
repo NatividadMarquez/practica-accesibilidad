@@ -77,32 +77,26 @@ a {
     position: relative;
     width: 100%;
     height: 350px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
 }
 
 .banner::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
-    background-color: #00000080;
-    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.502);
 }
 
 .imagen-banner {
     width: 100%;
     height: 100%;
-    object-fit: cover;
 }
 
 .titulo-banner {
     position: absolute;
-    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-family: 'Times New Roman', Times, serif;
     font-size: 3rem;
     font-weight: 500;
@@ -305,7 +299,7 @@ ul {
 
 /* Día activo */
 .days .active {
-    background: #FF9800;
+    background: #E67E00;
     color: white;
     border-radius: 50%;
     padding: 10px;
